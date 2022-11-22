@@ -1,7 +1,7 @@
 package com.trycloud.step_definitions;
 
 import com.trycloud.pages.LoginPage;
-import com.trycloud.pages.ManageFoldersPage;
+import com.trycloud.pages.US7;
 import com.trycloud.utilities.BrowserUtils;
 import com.trycloud.utilities.Driver;
 import io.cucumber.java.en.And;
@@ -11,9 +11,9 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-public class ManageFolders_StepDef {
+public class US7_StepDef {
 
-    ManageFoldersPage manageFoldersPage = new ManageFoldersPage();
+    US7 manageFoldersPage = new US7();
     LoginPage loginPage = new LoginPage();
     Actions actions = new Actions(Driver.getDriver());
 

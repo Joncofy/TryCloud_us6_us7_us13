@@ -8,9 +8,9 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class ManageFoldersPage {
+public class US7 {
 
-    public ManageFoldersPage() {
+    public US7() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
