@@ -18,15 +18,15 @@ public class US7_StepDef {
     Actions actions = new Actions(Driver.getDriver());
 
     String newFolderName = "US7NewFolder";
-    String uploadedFile = "860-681-max";
+    String uploadedFile = "AAA";
 
-
-    @Given("user on the dashboard page")
-    public void user_on_the_dashboard_page() {
-        loginPage.navigateTo();
-        loginPage.trycloud_login("User4", "Userpass123");
-        loginPage.user_click_loginBtn();
-    }
+//
+//    @Given("user on the dashboard page")
+//    public void user_on_the_dashboard_page() {
+//        loginPage.navigateTo();
+//        loginPage.trycloud_login("User4", "Userpass123");
+//        loginPage.user_click_loginBtn();
+//    }
 
     @When("user clicks on {string} module")
     public void user_clicks_on_module(String string) {
@@ -90,7 +90,7 @@ public class US7_StepDef {
 
     @And("the user uploads a file with the upload file option")
     public void the_user_uploads_a_file_with_the_upload_file_option() {
-        manageFoldersPage.uploadOpt.sendKeys("/Users/alena/Desktop/860-681-max.png");
+        manageFoldersPage.uploadOpt.sendKeys("/Users/joncofy/IdeaProjects/TryCloud_us6_us7_us13/src/test/java/com/trycloud/files/AAA.txt");
         BrowserUtils.sleep(3);
     }
 

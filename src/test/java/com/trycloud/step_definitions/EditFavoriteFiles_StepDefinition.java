@@ -41,7 +41,7 @@ public class EditFavoriteFiles_StepDefinition {
             BrowserUtils.sleep(1);
             actions.moveToElement(editFavoriteFilesPage.addBtn).pause(1).click().perform();
             BrowserUtils.sleep(1);
-            editFavoriteFilesPage.uploadOpt.sendKeys("/Users/joncofy/Desktop/AAA.txt");
+            editFavoriteFilesPage.uploadOpt.sendKeys("/Users/joncofy/IdeaProjects/TryCloud_us6_us7_us13/src/test/java/com/trycloud/files/AAA.txt");
             BrowserUtils.sleep(1);
         }
     }
@@ -85,12 +85,13 @@ public class EditFavoriteFiles_StepDefinition {
 
     @When("users uploads file with the “upload file” option")
     public void users_uploads_file_with_the_upload_file_option() {
-        editFavoriteFilesPage.uploadOpt.sendKeys("/Users/joncofy/Desktop/AAA.txt");
+        editFavoriteFilesPage.uploadOpt.sendKeys("/Users/joncofy/IdeaProjects/TryCloud_us6_us7_us13/src/test/java/com/trycloud/files/AAA.txt");
         BrowserUtils.sleep(3);
     }
 
     @Then("verify the file is displayed on the page")
     public void verify_the_file_is_displayed_on_the_page() {
+        BrowserUtils.sleep(3);
 
         for(WebElement element:editFavoriteFilesPage.allList){
             if(element.getText().contains("AAA")){
